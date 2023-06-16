@@ -1,0 +1,9 @@
+http:
+  host: "localhost"
+  port: "8081"
+  
+db:
+  URL: "jdbc:postgresql://localhost:5432/postgres"
+  Driver class name: "org.postgresql.Driver"
+  User: "postgres"
+  Password: "password"
