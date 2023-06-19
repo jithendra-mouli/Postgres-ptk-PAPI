@@ -16,4 +16,7 @@ http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/cu
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="0dd38812-e333-4893-a289-bcc5747c3728" >
 		<db:generic-connection url="${db.URL}" driverClassName="${db.Driver class name}" user="${db.User}" password="${db.Password}" />
 	</db:config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="46925f38-c7f8-41e0-8720-0603060d903e" >
+		<http:request-connection host="localhost" port="8083" />
+	</http:request-config>
 </mule>

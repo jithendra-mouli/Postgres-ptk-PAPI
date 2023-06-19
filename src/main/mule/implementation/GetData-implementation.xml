@@ -7,6 +7,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<sub-flow name="GetData-implementationSub_Flow" doc:id="2e29d49a-67f4-4cfd-82e3-bbcbe980729f" >
+		<logger level="INFO" doc:name="Logger" doc:id="d6615877-0d88-44b1-aefa-480190a73234" message="Data Retriving from Postgres server"/>
 		<db:select doc:name="Select" doc:id="88571fd2-c983-4a4c-9734-a81343d600dc" config-ref="Database_Config">
 			<db:sql ><![CDATA[select * from accounts]]></db:sql>
 		</db:select>
